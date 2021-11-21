@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+require('dotenv').config();
+
+console.log(process.env.MESSAGE_STYLE);
 
 // Use body-parser to Parse POST Requests
 app.use(bodyParser.urlencoded({extended: true}));
